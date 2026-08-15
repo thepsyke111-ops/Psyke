@@ -42,13 +42,13 @@ nav{display:flex;gap:32px;font-size:11px}
 nav a{text-decoration:none;padding-bottom:5px}
 nav a:hover, nav a.active{border-bottom:1px solid var(--purple)}
 main{overflow:hidden}
-.hero{
+.c1{
   min-height:650px;
   position:relative;
   max-width:1180px;
   margin:auto;
 }
-.hero h1{
+.c1 h1{
   position:absolute;
   z-index:2;
   top:28px;
@@ -61,7 +61,7 @@ main{overflow:hidden}
   font-style:italic;
   margin:0;
 }
-.hero-image{
+.c1-image{
   position:absolute;
   width:498px;
   height:583px;
@@ -69,12 +69,12 @@ main{overflow:hidden}
   right:13%;
   top:37px;
 }
-.hero-copy{
+.c1-copy{
   position:absolute;
   left:9%;
   bottom:108px;
 }
-.hero-copy p{margin:0 0 28px;color:#654b7d}
+.c1-copy p{margin:0 0 28px;color:#654b7d}
 .button{
   display:inline-block;
   background:var(--purple);
