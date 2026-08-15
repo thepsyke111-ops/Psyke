@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:wght@400;700&display=swap');
+
+:root{
+  --lavender:#f5eefb;
+  --lavender-2:#d9bce9;
+  --purple:#70518b;
+  --purple-dark:#4e3961;
+  --mint:#f2fbf6;
+  --line:#7a5a93;
+  --max:1000px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--lavender);
+  color:var(--purple-dark);
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:13px;
+  line-height:1.7;
+}
+a{color:inherit}
+h1,h2,h3,.brand,.serif{
+  font-family:"DM Serif Display", Georgia, serif;
+  font-weight:400;
+}
+header{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 4%;
+}
+.brand{
+  font-size:23px;
+  font-style:italic;
+  font-weight:bold;
+  text-decoration:none;
+}
+nav{display:flex;gap:32px;font-size:11px}
+nav a{text-decoration:none;padding-bottom:5px}
+nav a:hover, nav a.active{border-bottom:1px solid var(--purple)}
+main{overflow:hidden}
+.hero{
+  min-height:650px;
+  position:relative;
+  max-width:1180px;
+  margin:auto;
+}
+.hero h1{
+  position:absolute;
+  z-index:2;
+  top:28px;
+  left:2%;
+  right:2%;
+  text-align:center;
+  font-size:82px;
+  line-height:.95;
+  color:var(--purple);
+  font-style:italic;
+  margin:0;
+}
+.hero-image{
+  position:absolute;
+  width:498px;
+  height:583px;
+  object-fit:cover;
+  right:13%;
+  top:37px;
+}
+.hero-copy{
+  position:absolute;
+  left:9%;
+  bottom:108px;
+}
+.hero-copy p{margin:0 0 28px;color:#654b7d}
+.button{
+  display:inline-block;
+  background:var(--purple);
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  padding:14px 55px;
+  font-size:11px;
+  border:1px solid var(--purple);
+}
+.button.outline{background:transparent;color:var(--purple)}
+.section{padding:70px 8%}
+.pioneer{
+  background:#d3b4e5;
+  padding:54px 10% 0;
+}
+.pioneer-top{
+  max-width:1000px;margin:auto;display:grid;
+  grid-template-columns:1.25fr 1fr 1fr;gap:45px;align-items:start;
+}
+.pioneer h2{font-size:45px;line-height:1.02;margin:0;font-style:italic}
+.pioneer p{font-size:10px;line-height:1.55;margin-top:4px}
+.abstract{
+  display:block;width:100%;height:450px;object-fit:cover;object-position:center;
+}
+.journey{max-width:1000px;margin:auto;padding:65px 0 80px}
+.journey-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:35px}
+.journey h2{font-size:36px;font-style:italic;margin:0}
+.journey img{display:block;width:707px;max-width:78%;height:345px;object-fit:cover;margin:0 auto}
+.footer{
+  padding:65px 9% 55px;
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  min-height:190px;
+}
+.footer .brand{font-size:28px}
+.footer-email{font-family:"DM Serif Display",Georgia,serif;font-size:28px;font-style:italic;text-decoration:underline}
+.page-hero{
+  min-height:650px;
+  max-width:1000px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+  padding:40px 0 70px;
+}
+.page-hero h1{font-size:48px;line-height:1.02;font-style:italic;color:var(--purple);margin:0 0 32px}
+.page-hero p{font-size:11px;line-height:1.8}
+.page-hero img{width:100%;height:670px;object-fit:cover}
+.mint{background:var(--mint)}
+.founder{
+  text-align:center;
+  padding:55px 8% 100px;
+  min-height:650px;
+}
+.founder h2,.contact h1,.faq h1{font-size:46px;font-style:italic;color:var(--purple);margin:0 0 45px}
+.founder-grid{
+  max-width:900px;margin:auto;display:grid;grid-template-columns:330px 1fr;gap:110px;align-items:start;text-align:left
+}
+.founder-grid img{width:330px;height:400px;object-fit:cover;border-radius:30px}
+.founder-grid p{font-size:11px;line-height:1.7;margin:20px 0}
+.contact{
+  max-width:1000px;margin:auto;min-height:720px;padding:50px 0 80px;
+  display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center
+}
+.contact h1{font-size:47px;line-height:1.02;margin-bottom:10px}
+.contact p{font-size:11px;margin-bottom:55px}
+form{max-width:470px}
+.name-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+label{display:block;font-size:9px;margin:0 0 5px}
+input,textarea{
+  width:100%;border:1px solid var(--purple);border-radius:20px;background:transparent;
+  padding:10px 14px;font:10px "Libre Baskerville",Georgia,serif;color:var(--purple-dark);
+  outline:none;margin-bottom:14px
+}
+textarea{height:85px;border-radius:12px;resize:vertical}
+form button{border:0;cursor:pointer}
+.contact img{width:100%;height:600px;object-fit:contain;background:white}
+.faq{
+  min-height:720px;max-width:1000px;margin:auto;padding:70px 0 100px;
+  display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start
+}
+.faq h1{font-size:45px;line-height:1.05}
+.faq-box{border:2px solid var(--purple);border-radius:10px;padding:18px 30px}
+details{border-top:1px solid var(--purple);padding:16px 0}
+details:first-child{border-top:0}
+summary{cursor:pointer;list-style:none;font-family:"DM Serif Display",Georgia,serif;font-style:italic;font-size:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"⌄";float:right;font-family:Georgia;font-style:normal}
+details[open] summary::after{transform:rotate(180deg)}
+details p{font-size:10px;margin:12px 0 0}
+.content{
+  max-width:1000px;margin:auto;padding:65px 0 100px
+}
+.content h1{font-size:52px;line-height:1;font-style:italic;color:var(--purple)}
+.content-intro{max-width:680px;font-size:12px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:55px}
+.card{
+  border:1px solid #a98cba;padding:28px;background:rgba(255,255,255,.18);
+  min-height:210px
+}
+.card h3{font-size:27px;font-style:italic;color:var(--purple);margin:0 0 12px}
+.card p{font-size:10px}
+@media(max-width:800px){
+  header{height:68px;padding:0 6%}
+  nav{gap:12px;font-size:9px}
+  .hero{min-height:650px}
+  .hero h1{font-size:52px;top:35px}
+  .hero-image{width:72%;height:430px;right:8%;top:130px}
+  .hero-copy{left:10%;bottom:35px}
+  .pioneer-top,.page-hero,.founder-grid,.contact,.faq{grid-template-columns:1fr}
+  .pioneer-top{gap:10px}
+  .abstract{height:300px}
+  .journey-head{align-items:flex-start;gap:20px}
+  .journey h2{font-size:30px}
+  .journey img{max-width:100%;height:280px}
+  .page-hero{padding:40px 7%;gap:25px}
+  .page-hero img{height:480px}
+  .founder-grid{gap:35px}
+  .founder-grid img{width:100%;height:420px}
+  .contact,.faq,.content{padding-left:7%;padding-right:7%}
+  .contact img{height:430px}
+  .faq{gap:30px}
+  .cards{grid-template-columns:1fr}
+  .footer{padding:45px 7%;gap:30px;flex-direction:column;align-items:flex-start}
+  .footer-email{font-size:21px}
+}
